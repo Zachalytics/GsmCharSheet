@@ -1,0 +1,16 @@
+:root{
+    --text: rgb(14, 18, 37);
+    --background: rgb(251, 252, 254);
+    --primary: rgb(31, 52, 170);
+    --secondary: rgb(195, 202, 233);
+    --accent: rgb(61, 78, 164);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.numBox{
+    width: 40px;
+    text-align: center;
+}

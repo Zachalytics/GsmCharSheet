@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Resources/style.css">
+    <script src="./Resources/script/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Guns Swords and Magic Character Sheet</h1>
+    <div class="nameFrame">
+        <label for="charName">Character Name:</label>
+        <input type="text" id="charName" name="charName">
+        <label for="charLvl">level</label>
+        <input type="number" id="charLvl" name="charLvl" class="numBox" min="1" max="6" value="1">
+        <label for="charBuild">Build</label>
+        <input type="text" id="charBuild" name="charBuild">
+    </div>
+    <div class="statPrimaryTop">
+        <label for="wounds">Wounds</label>
+        <input type="number" id="woundsAdj" name="woundsAdj" class="numBox" min="0" value="6">
+        <input type="number" id="woundsMax" name="woundsMax" class="numBox" value="6" disabled>
+        
+        <label for="focus">Focus</label>
+        <input type="number" id="focusAdj" name="focusAdj" min="0" class="numBox" value="6">
+        <input type="number" id="focusMax" name="focusMax" class="numBox" value="6" disabled>
+    </div>
+    <div class="statPrimaryBottom">
+        <label for="prot">Protection</label>
+        <input type="number" id="protAdj" name="protAdj" min="0" class="numBox" value="6">
+        <input type="number" id="protMax" name="protMax" class="numBox" value="6" disabled>
+
+        <label for="pinch">Pinch</label>
+        <input type="number" id="pinchAdj" name="pinchAdj" min="0" class="numBox" value="6">
+        <input type="number" id="pinchMax" name="pinchMax" class="numBox" value="6" disabled>
+    </div>
+    <div class="statSecondaryTop">
+        <button id="attackButton">Attack</button>
+        <input type="number" id="attackRoll" name="attack" class="numBox" value="2" disabled>
+        <label for="move">Move</label>
+        <input type="number" id="move" name="move" class="numBox" value="2" disabled>
+        <button id="magicButton">Magic</button>
+        <input type="number" id="magicRoll" name="magic" class="numBox" value="2" disabled>
+    </div>
+    <div class="statSecondaryBottom">
+        <button id="defendButton">Defense</button>
+        <input type="number" id="defendRoll" name="defend" class="numBox" value="2" disabled>
+        <button id="awareButton">Aware</button>
+        <input type="number" id="awareRoll" name="aware" class="numBox" value="2" disabled>
+        <button id="resistButton">Resist</button>
+        <input type="number" id="resistRoll" name="resist" class="numBox" value="2" disabled>
+    </div>
+</body>
+</html>
