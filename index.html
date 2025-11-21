@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Guns Swords and Magic Character Sheet</h1>
-    <div class="nameFrame">
+    <div class="nameFrame" id="nameFrame">
         <label for="charName">Character Name:</label>
         <input type="text" id="charName" name="charName">
         <label for="charLvl">level</label>
@@ -17,25 +17,25 @@
         <label for="charBuild">Build</label>
         <input type="text" id="charBuild" name="charBuild">
     </div>
-    <div class="statPrimaryTop">
+    <div class="container" id="statPrimaryTop">
         <label for="wounds">Wounds</label>
-        <input type="number" id="woundsAdj" name="woundsAdj" class="numBox" min="0" value="6">
+        <input type="number" id="woundsAdj" name="woundsAdj" class="numBox" min="0" max="6" value="0">
         <input type="number" id="woundsMax" name="woundsMax" class="numBox" value="6" disabled>
         
         <label for="focus">Focus</label>
-        <input type="number" id="focusAdj" name="focusAdj" min="0" class="numBox" value="6">
+        <input type="number" id="focusAdj" name="focusAdj" min="0" class="numBox" max="6" value="0">
         <input type="number" id="focusMax" name="focusMax" class="numBox" value="6" disabled>
     </div>
-    <div class="statPrimaryBottom">
+    <div class="container" id="statPrimaryBottom">
         <label for="prot">Protection</label>
-        <input type="number" id="protAdj" name="protAdj" min="0" class="numBox" value="6">
+        <input type="number" id="protAdj" name="protAdj" min="0" class="numBox" max="6" value="0">
         <input type="number" id="protMax" name="protMax" class="numBox" value="6" disabled>
 
         <label for="pinch">Pinch</label>
-        <input type="number" id="pinchAdj" name="pinchAdj" min="0" class="numBox" value="6">
+        <input type="number" id="pinchAdj" name="pinchAdj" min="0" class="numBox" max="6" value="0">
         <input type="number" id="pinchMax" name="pinchMax" class="numBox" value="6" disabled>
     </div>
-    <div class="statSecondaryTop">
+    <div class="container" id="statSecondaryTop">
         <button id="attackButton">Attack</button>
         <input type="number" id="attackRoll" name="attack" class="numBox" value="2" disabled>
         <label for="move">Move</label>
@@ -43,7 +43,7 @@
         <button id="magicButton">Magic</button>
         <input type="number" id="magicRoll" name="magic" class="numBox" value="2" disabled>
     </div>
-    <div class="statSecondaryBottom">
+    <div class="container" id="statSecondaryBottom">
         <button id="defendButton">Defense</button>
         <input type="number" id="defendRoll" name="defend" class="numBox" value="2" disabled>
         <button id="awareButton">Aware</button>
